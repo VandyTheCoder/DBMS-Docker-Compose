@@ -1,0 +1,4 @@
+CREATE USER helloWorld IDENTIFIED BY helloWorldPassword;
+GRANT CONNECT, RESOURCE TO helloWorld;
+ALTER USER helloWorld QUOTA UNLIMITED ON USERS;
+exit;
