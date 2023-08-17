@@ -56,4 +56,4 @@ If you encounter any issues or need help, please check the Docker logs for relev
 Please note that this setup is intended for development and testing purposes only. It may not be suitable for production environments.
 
 ## License
-This project is licensed under the MIT License. Feel free to use and modify the code as per the terms of the license.
+This project is licensed under the [MIT License](https://github.com/VandyTheCoder/DBMS-Docker-Compose/blob/main/LICENSE). Feel free to use and modify the code as per the terms of the license.
