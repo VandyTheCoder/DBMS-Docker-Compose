@@ -9,4 +9,4 @@ services:
     ports:
       - "1521:1521"
     volumes:
-      - ./oracle/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./init-script/init.sql:/docker-entrypoint-initdb.d/init.sql
