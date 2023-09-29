@@ -41,17 +41,19 @@ docker-compose down
 ```
 
 ## Database Information
+### Oracle Database
+- Version: Specify the Oracle Database version you want to run in the Dockerfile and docker-compose.yml files.
+
+### PostgreSQL Database
+- Version: Specify the PostgreSQL version you want to run in the Dockerfile and docker-compose.yml files.
+- Default credentails
 ```
-Oracle Database
-Version: Specify the Oracle Database version you want to run in the Dockerfile and docker-compose.yml files.
+Username: hello-world
+Password: hellow-world-password
 ```
-```
-PostgreSQL Database
-Version: Specify the PostgreSQL version you want to run in the Dockerfile and docker-compose.yml files.
-Default Username/Password: hello-world / hellow-world-password
-Customization
+### Customization
 Feel free to customize the Docker Compose files and database configuration according to your specific needs. You can modify environment variables, ports, volume mounts, or any other settings to suit your project requirements.
-```
+
 ## Troubleshooting
 If you encounter any issues or need help, please check the Docker logs for relevant error messages. You can also refer to the official documentation of Docker, Oracle, and PostgreSQL for further troubleshooting guidance.
 
