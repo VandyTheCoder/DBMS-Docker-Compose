@@ -31,10 +31,9 @@ cd arm64v8 # For arm64 or aarch64 cpu
 ```
 **ORACLE ARM64**
 
-Please register or sign in oracle account before pull oracle arm64 docker image.
-
-Sign In Url: [Oracle Registry](
+Please register or sign in oracle account before pull oracle arm64 docker image. Sign In Url: [Oracle Registry](
 https://container-registry.oracle.com/ords/f?p=113:4:101545431567646:::4:P4_REPOSITORY,AI_REPOSITORY,AI_REPOSITORY_NAME,P4_REPOSITORY_NAME,P4_EULA_ID,P4_BUSINESS_AREA_ID:9,9,Oracle%20Database%20Enterprise%20Edition,Oracle%20Database%20Enterprise%20Edition,1,0&cs=3qC1e9Z5CUjmysxqjMXQpJfBhaLzmT9SvM53op5DIId_poGL8lR_-PzbjcvnUDY_EcilGn58DKkBNkxIbwbH72A)
+
 5. You can edit init sql script the `init-script` folder
 
 6. Start the database container(s) using Docker Compose:
