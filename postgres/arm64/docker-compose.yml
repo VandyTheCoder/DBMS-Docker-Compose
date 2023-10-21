@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  db:
+    image: "arm64v8/postgres"
+    restart: on-failure
+    environment:
+      - DB_USER=hellow-world
+      - DB_PASSWORD=hello-world-password
+      - POSTGRES_PASSWORD=postgres-password
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init-script/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/var/lib/postgresql/data

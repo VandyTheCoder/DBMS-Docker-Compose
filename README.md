@@ -23,18 +23,30 @@ cd oracle   # For Oracle database
 # OR
 cd postgres # For PostgreSQL database
 ```
-4. You can edit init sql script the `init-script` folder
+4. Choose your CPU-ARCH `amd64` or `arm64v8`
+```sh
+cd amd64   # For amd64 or x64 cpu
+# OR
+cd arm64v8 # For arm64 or aarch64 cpu
+```
+**ORACLE ARM64**
 
-5. Start the database container(s) using Docker Compose:
+Please register or sign in oracle account before pull oracle arm64 docker image.
+
+Sign In Url: [Oracle Registry](
+https://container-registry.oracle.com/ords/f?p=113:4:101545431567646:::4:P4_REPOSITORY,AI_REPOSITORY,AI_REPOSITORY_NAME,P4_REPOSITORY_NAME,P4_EULA_ID,P4_BUSINESS_AREA_ID:9,9,Oracle%20Database%20Enterprise%20Edition,Oracle%20Database%20Enterprise%20Edition,1,0&cs=3qC1e9Z5CUjmysxqjMXQpJfBhaLzmT9SvM53op5DIId_poGL8lR_-PzbjcvnUDY_EcilGn58DKkBNkxIbwbH72A)
+5. You can edit init sql script the `init-script` folder
+
+6. Start the database container(s) using Docker Compose:
 
 ```sh
 docker-compose up -d
 ```
-6. Wait for the container(s) to start. You can monitor the logs to see the progress:
+7. Wait for the container(s) to start. You can monitor the logs to see the progress:
 ```sh
 docker-compose logs -f
 ```
-7. Once the container(s) are up and running, you can connect to the database using your preferred database client. When you're done using the database, you can stop and remove the container(s):
+8. Once the container(s) are up and running, you can connect to the database using your preferred database client. When you're done using the database, you can stop and remove the container(s):
 
 ```sh
 docker-compose down

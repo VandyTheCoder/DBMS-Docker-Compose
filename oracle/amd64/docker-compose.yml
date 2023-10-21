@@ -10,3 +10,4 @@ services:
       - "1521:1521"
     volumes:
       - ./init-script/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./data:/u01/app/oracle
